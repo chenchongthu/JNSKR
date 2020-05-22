@@ -53,6 +53,7 @@ python main_Baselines.py
 
 For Amazon dataset:
 
+```
 parser.add_argument('--dropout', type=float, default=[0.8,0.7],
                         help='dropout keep_prob')
 parser.add_argument('--coefficient', type=float, default=[1.0, 0.01],
@@ -62,8 +63,9 @@ parser.add_argument('--c0', type=float, default=300,
 parser.add_argument('--c1', type=float, default=600,
                         help='initial weight of non-observed knowledge data')
                         
+```                        
 For Yelp dataset:
-
+```
 parser.add_argument('--dropout', type=float, default=[0.9,0.7],
                         help='dropout keep_prob')
 parser.add_argument('--coefficient', type=float, default=[1.0, 0.01],
@@ -73,11 +75,11 @@ parser.add_argument('--c0', type=float, default=1000,
 parser.add_argument('--c1', type=float, default=7000,
                         help='initial weight of non-observed knowledge data')
 
-
+```
 ## Suggestions for parameters
 
 Several important parameters need to be tuned for different datasets, which are:
-
+```
 parser.add_argument('--dropout', type=float, default=[0.8,0.7],
                         help='dropout keep_prob')
 parser.add_argument('--coefficient', type=float, default=[1.0, 0.01],
@@ -86,7 +88,7 @@ parser.add_argument('--c0', type=float, default=300,
                         help='initial weight of non-observed data')
 parser.add_argument('--c1', type=float, default=600,
                         help='initial weight of non-observed knowledge data')
-
+```
 Specifically, c0 and c1 determine the overall weight of non-observed data. The coefficient parameter determines the importance of different tasks in joint learning.
 
 You can also contact us if you can not tune the parameters properly.
