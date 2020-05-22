@@ -32,11 +32,11 @@ def parse_args():
     parser.add_argument('--lambda_bilinear', type=float, default=[1e-5, 1],
                         help='weight of regul')
     parser.add_argument('--c0', type=float, default=300,
-                        help='weight of non-observed data')
+                        help='initial weight of non-observed data')
     parser.add_argument('--c1', type=float, default=600,
-                        help='weight of non-observed data')
+                        help='initial weight of non-observed knowledge data')
     parser.add_argument('--p', type=float, default=0.5,
-                        help='weight of non-observed data')
+                        help='significance level of weight')
     parser.add_argument('--sparsity', type=float, default=0,
                         help='sparsity test')
     return parser.parse_args()
