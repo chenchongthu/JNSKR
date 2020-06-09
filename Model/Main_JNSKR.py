@@ -13,8 +13,7 @@ def _writeline_and_time(s):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Run JNSKR")
-    parser.add_argument('--dataset', nargs='?', default='amazon-book',
-                        help='Choose a dataset: amazon-book')
+    
     parser.add_argument('--verbose', type=int, default=10,
                         help='Interval of evaluation.')
     parser.add_argument('--batch_size', nargs='?', type=int, default=256,
