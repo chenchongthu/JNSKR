@@ -56,7 +56,7 @@ def caculate_weight(c0,c1,p,train_set, train_len,relation_train,relation_len):
     for i in relation_train.keys():
         tem += np.power(mk[i], p)
     for i in relation_train.keys():
-        ck[i] = c1 * np.power(m[i], p) / tem
+        ck[i] = c1 * np.power(mk[i], p) / tem
 
     print c[0:10]
     print ck[0:10]
